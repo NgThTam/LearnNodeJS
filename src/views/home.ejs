@@ -8,8 +8,43 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="asd">hello coincard</h1>
+    <div class="topnav">
+        <a class="jsnav active" href="#home">Home</a>
+        <a class="jsnav" href="#news">News</a>
+        <a class="jsnav" href="#contact">Contact</a>
+        <a class="jsnav" href="#about">About</a>
+    </div>
+
     <a href="./shop.ejs"> link </a>
+    <div><%= dataUser  %></div>
+    <%= dataUser.length %>
+    <h1 class="asd">List User</h1>
+    
+    <table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>View</th>
+    </tr>
+    <% dataUser.forEach((user) => { %>
+        <!-- <%# if(user.Id == 1){ %> -->
+            <tr>
+                <td><%= user.firstName %></td>
+                <td><%= user.lastName %></td>
+                <td>@</td>
+            </tr>   
+     <% }) %>
+
+      <!-- <% for(let i=0; i < dataUser.length; i++) { %>
+        <tr>
+          <td><%= dataUser[i].firstName %></td>
+          <td><%= dataUser[i].lastName %></td>
+          <td>@</td>
+        </tr>
+     <% } %> -->
+    </table>
+        
+    
 </body>
 <script src="js/test.js"></script>
 </html>
