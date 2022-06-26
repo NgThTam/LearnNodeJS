@@ -12,7 +12,7 @@ const initWebRouter = (app) => {
 	// });
 
 	router.get("/", getPage.getHomePage);
-	router.get("/shop.ejs", getPage.getShopPage);
+	router.get("/detail/:userId", getPage.getDetailPage);
 
 	return app.use("/", router);
 };
