@@ -47,3 +47,24 @@ h1 {
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+.createNewuser{
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inpUser{
+  padding-bottom: 20px;
+  position: relative;
+}
+.inpUser input{
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  
+}
+.inpUser button{
+  position: absolute;
+  right: 0px;
+}

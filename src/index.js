@@ -7,6 +7,12 @@ import initWebRouter from "./route/web";
 const app = express();
 const port = process.env.PORT;
 
+// parse application/x-www-form-urlencoded
+app.use(express.urlencoded({ extended: false }));
+
+// parse application/json
+app.use(express.json());
+
 //config
 configViewEngine(app);
 //init web route
