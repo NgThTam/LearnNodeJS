@@ -20,11 +20,11 @@ let getDetailPage = (req, res) => {
 	);
 };
 let createNewUser = (req, res) => {
-	let { firstName, lastName, address } = req.body;
-	connection.query(
-		"insert into user (firstName, lastName, address) values (?,?,?)",
-		[firstName, lastName, address]
-	);
+	// let { firstName, lastName, address } = req.body;
+	// connection.query(
+	// 	"insert into user (firstName, lastName, address) values (?,?,?)",
+	// 	[firstName, lastName, address]
+	// );
 	return res.redirect("/");
 };
 

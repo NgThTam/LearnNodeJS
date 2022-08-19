@@ -68,3 +68,23 @@ h1 {
   position: absolute;
   right: 0px;
 }
+.test{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.oke{
+  width: 20rem;
+  height: 20rem;
+  background-color: blue;
+}
+.js_test{
+  display: flex;
+}

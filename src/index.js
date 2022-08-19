@@ -2,6 +2,7 @@ import express from "express";
 import configViewEngine from "./configs/viewEngine";
 import "dotenv/config";
 import initWebRouter from "./route/web";
+import initAPI from "./route/api";
 // import connection from "./configs/connectDB";
 
 const app = express();
@@ -17,6 +18,8 @@ app.use(express.json());
 configViewEngine(app);
 //init web route
 initWebRouter(app);
+//init api
+initAPI(app);
 
 app.listen(port, () => {
 	console.log(`http://localhost:${port}`);
